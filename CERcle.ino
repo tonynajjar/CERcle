@@ -12,7 +12,7 @@
 #define DATA_PIN_LOOPS 2
 #define DATA_PIN_CONNECTIONS 3
 // Clock pin only needed for SPI based chipsets when not using hardware SPI
-
+//edited test
 #define BOOSTER_HIGHEST_SPEED 75
 #define BOOSTER_LOWEST_SPEED 150
 
