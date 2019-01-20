@@ -1,6 +1,5 @@
 #include "FastLED.h"
 
-// How many leds are in the strip?
 #define NUM_LEDS_BOOSTER 2
 #define NUM_LEDS_PS 16
 #define NUM_LEDS_SPS 24
@@ -9,7 +8,7 @@
 #define NUM_LEDS_CONNECTIONS 8
 #define NUM_LEDS_TOTAL 112
 // Data pin that led data will be written out over
-#define DATA_PIN_LOOPS 2
+#define DATA_PIN_LOOPS 9
 #define DATA_PIN_CONNECTIONS 3
 // Clock pin only needed for SPI based chipsets when not using hardware SPI
 //edited test
@@ -60,11 +59,9 @@ void setup() {
   
   while (status != WL_CONNECTED) {
     Serial.print("Attempting to connect to SSID: ");
-    Serial.println("f@");
-    //Sunrise_2.4GHz_6F1520
-    //52vw22ruhxFb
+    Serial.println("G4");
     // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
-    status = WiFi.begin("f@");
+    status = WiFi.begin("G4");
     // wait 10 seconds for connection:
    
   // sanity check delay - allows reprogramming if accidently blowing power w/leds
@@ -108,8 +105,6 @@ void setup() {
       }
 
       calibrate();
-
-   
 
 }
 
